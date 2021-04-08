@@ -1,16 +1,14 @@
 
 import React, { Component } from 'react';
 import { withRouter} from 'react-router-dom';
-
+import Navbar from 'Components/Navbar'
 const Layout = ({children})=>{
   return(<>
         <div className={'container'}>
-          <div className={'title-item'}>
-          </div>
-          <div className={'body-item'}>
+          <Navbar/> 
+          <div className={'body'}>
             {children}
           </div>
-          <footer className='footer'/>
         </div>
       </>)
 };
